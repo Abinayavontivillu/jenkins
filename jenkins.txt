@@ -1,0 +1,10 @@
+1  sudo amazon-linux-extras install epel -y
+    2      2  yum install java-17
+    3  sudo amazon-linux-extras install epel -y
+    4      2  yum install java-17
+    5   yum install java-17
+    6   sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+    7  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    8  yum install jenkins
+    9  systemctl restart jenkins
+   10  systemctl enable jenkins
