@@ -1,12 +1,10 @@
 pipeline {
-   agent any
-   stages {
-       stages('welcome notes') {
-     steps {
-         script {
-      println "welcome to Jenkins scripting"
-     }
-   }
-   }
- }
+    agent any
+    stages {
+        stage('welcome notes') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
