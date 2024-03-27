@@ -1,10 +1,10 @@
 pipeline {
- agent slave1/any/docker/kubernetes
- stages {
-   stages('welcome notes') {
-   steps {
-     script {
-       println "welcome to Jenkins scripting"
+   agent any
+   stages {
+       stages('welcome notes') {
+     steps {
+         script {
+      println "welcome to Jenkins scripting"
      }
    }
    }
